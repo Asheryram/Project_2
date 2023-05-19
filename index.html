@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="input"><h2><u>STUDENT MARKSHEET</u></h2></div>
+    <fieldset>
+        <legend><u>STUDENT INFORMATION</u></legend>
+    <div class="input">
+         <label for="Name" >Name :</label>
+        <input type="text" name="Name" id="Name">
+         <label for="fName">Father Name: </label>
+        <input type="text" name="fName" id="fName">  
+    </div>
+    <div class="input">
+        <label for="iName">Institite Name :</label>
+       <input type="text" name="iName" id="iName">
+        <label for="batch">Batch :</label>
+       <input type="text" name="batch" id="batch">
+    </div>
+    <div class="input">
+        <label for="uNum">Unique Number :</label>
+        <input type="text" name="uNum" id="uNum">
+    </div>
+    </fieldset>
+
+
+    <fieldset>
+        <legend><u>SUBJECTS MARKS</u></legend>
+        <div class="input">
+            <span> Office Automation :</span>
+            <input type="number" max="100" min="0" id="oA">
+            <span class="data">Out Of 100</span>
+        </div>
+        <div class="input">
+            <span>Web Design :</span>
+            <input type="number" max="100" min="0" id="wD">
+            <span class="data">Out Of 100</span>
+        </div>
+        <div class="input">
+            <span>IT :</span>
+            <input type="number" max="100" min="0" id="iT">
+            <span class="data">Out Of 100</span>
+        </div>
+        <div class="input">
+            <span>C# programming :</span>
+            <input type="number" max="100" min="0" id="cP">
+            <span class="data">Out Of 100</span>
+        </div>
+
+    <div class="btn-flex">
+        <button  id="b1">Submit</button>
+        <button id="b2">Reset</button>
+    </div>
+      
+    </fieldset>
+    <div class="input hidden" id="tableinfo">
+
+        <table border="">
+            <tr>
+                <th colspan="
+                6">Student Information</th>
+            </tr>
+            <tr>
+                <td colspan="
+                3">Unique Number</td>
+                <td colspan="
+                3"><span id="uNum_T">...</span></td>   
+            
+            </tr>
+            <tr>
+                <td colspan="
+                3">Name</td>
+                <td colspan="
+                3"><span id="Name_T">...</span></td>    </tr>
+            <tr>
+                <td colspan="
+                3">Father Name</td>
+                <td colspan="
+                3"><span id="fName_T">...</span></td>    </tr>
+            <tr>
+                <td colspan="
+                3">Institiute Name </td>
+                <td colspan="
+                3"><span id="iName_T">...</span></td>
+            </tr>
+            <tr>
+                <td colspan="
+                3">Batch</td>
+                <td colspan="
+                3"><span id="batch_T">...</span></td>   
+            
+            </tr>
+          
+        
+        
+            <tr>
+                <th colspan="4">Student Marks</th>
+                <th  colspan="2">Status</th>
+            </tr>
+            <tr>
+                <td  colspan="2">Office Automation</td>
+                <td  colspan="2"><span id="oA_T">...</span></td>
+                <td  colspan="2"><span id="oA_S">...</span></td>
+            </tr>
+            <tr>
+                <td colspan="2">Web Design</td>
+                <td  colspan="2"><span id="wD_T">...</span></td>
+                <td  colspan="2"><span  id="wD_S">...</span></td>
+            </tr>
+            <tr>
+                <td colspan="2">IT </td>
+                <td  colspan="2"><span id="iT_T">...</span></td>
+                <td  colspan="2"><span id="iT_S">...</span></td>
+            </tr>
+            <tr>
+                <td colspan="2">C# Programming</td>
+                <td  colspan="2"><span id="cP_T">...</span></td>
+                <td  colspan="2"><span id="cP_S">...</span></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
